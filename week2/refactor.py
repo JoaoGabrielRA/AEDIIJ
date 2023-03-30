@@ -99,6 +99,7 @@ class CsvManager():
             if row[valCol] == value:
                 withThatValue.data.append(row)
         return withThatValue
+    # returns a dictionary containing the frequency table for the "nameCol" column
     def generateFreqTable(self, nameCol):
         if nameCol < 0 and nameCol >= -len(self.data[0]):
             nameCol = len(self.data[0]) + nameCol
@@ -116,6 +117,7 @@ class CsvManager():
             table_percentages[key] = percentage
         self.freqTable[nameCol] = table_percentages
         return table_percentages
+    # displays the frequency table for the "nameCol" column
     def displayTable(self, nameCol):
         if nameCol < 0 and nameCol >= -len(self.data[0]):
             nameCol = len(self.data[0]) + nameCol
@@ -129,6 +131,7 @@ class CsvManager():
         table_sorted = sorted(table_display, reverse = True)
         for entry in table_sorted:
             print(entry[1], ':', entry[0])
+    # prints the average value of the column "valueCol" for each unique entry in the "nameCol" column
     def avgPerEntry(self, nameCol, valueCol):
         if nameCol < 0 and nameCol >= -len(self.data[0]):
             nameCol = len(self.data[0]) + nameCol
@@ -140,10 +143,12 @@ class CsvManager():
             entry_occurrences = 0
             for row in self.data:
                 if row[nameCol] == entry:
-                    total += float(row[valueCol].replace(',','').replace('+',''))
+                    total += float(row[valueCol].replace(',', '').replace('+', ''))
                     entry_occurrences += 1
             avg_value = total / entry_occurrences
             print(entry, ':', avg_value)
+    # prints the pair found in the "nameCol" and "valueCol" positions for each row, such that the value in "valueCol" respects
+    # the equality condition for at least one of the *args
     def withEntries(self, entry:str, entryCol:int, valueCol:int, nameCol:int, *args:str):
         for row in self.data:
             conditions = False
@@ -152,6 +157,8 @@ class CsvManager():
             conditions = conditions and (row[entryCol] == entry)
             if conditions:
                 print(row[nameCol], ':', row[valueCol])
+    # returns the average value of the data in the "valueCol" for all rows that posess "entry" in "entryCol", but keeping out of
+    # the calculation values below "maximum"
     def avgExcludingLessThan(self, maximum, entry, entryCol, valueCol):
         under_max = []
         for row in self.data:
@@ -249,16 +256,16 @@ android_final.displayTable(1)
 print('\n')
 android_final.displayTable(-4)
 
-print('\n') # prints the average value of the number of downloads for each app genre (genres in 5th to last column, )
+print('\n') # prints the average value of the number of ratings for each app genre (genres in 5th to last column, )
 
 ios_final.avgPerEntry(-5, 5)
 
-print('\n') # prints the number of downloads for all apps in the 'Navigation' genre (names in column 1, searching for
+print('\n') # prints the number of ratings for all apps in the 'Navigation' genre (names in column 1, searching for
 # 'Navigation' in column -5 and displaying what's in column 5)
 
 ios_final.printEntries(1, 'Navigation', -5, 5)
 
-print('\n') # prints the number of downloads for all apps from the 'Reference' genre
+print('\n') # prints the number of ratings for all apps from the 'Reference' genre
 
 ios_final.printEntries(1, 'Reference', -5, 5)
 
@@ -270,23 +277,28 @@ print('\n') # displays the average number of downloads for each category (catego
 
 android_final.avgPerEntry(1, 5)
 
-print('\n') # displays the name of apps with communication as its category and number of downloads matching any of those values
+print('\n') # displays the name of apps with communication as its category and the number of downloads matching any of those values
 # (searches for 'COMMUNICATION' in column 1, searches for download numbers in column 5 and displays the name found in 0)
 
 android_final.withEntries('COMMUNICATION', 1, 5, 0, '1,000,000,000+', '500,000,000+', '100,000,000+')
 
-print('\n') #
+print('\n') # returns and prints the average number of downloads for all apps in the communication category that have less than
+# a hundred million installs (searches for 'COMMUNICATION' in column 1 and averages the values in column 5 keeping out of the)
+# calculation all values bigger than 100 million.
 
 print(android_final.avgExcludingLessThan(100000000, 'COMMUNICATION', 1, 5))
 
-print('\n') #
+print('\n') # prints the name and number of downloads for each app from the 'BOOKS_AND_REFERENCE' category
+# (searches for 'BOOKS_AND_REFERENCE' in column 1 and prints the data in columns 0 and 5 for each) 
 
 android_final.printEntries(0, 'BOOKS_AND_REFERENCE', 1, 5)
 
-print('\n') #
+print('\n') # prints the name and number of downloads of every app from the 'BOOKS_AND_REFERENCE' category that posess
+# the specified number of downloads.
 
 android_final.withEntries('BOOKS_AND_REFERENCE', 1, 5, 0, '1,000,000,000+', '500,000,000+', '100,000,000+')
 
-print('\n') #
+print('\n') # prints the name and number of downloads of every app from the 'BOOKS_AND_REFERENCE' category that posess
+# the specified number of downloads.
 
 android_final.withEntries('BOOKS_AND_REFERENCE', 1, 5, 0, '1,000,000+', '5,000,000+', '10,000,000+', '50,000,000+')
