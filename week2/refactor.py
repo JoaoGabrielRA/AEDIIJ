@@ -64,7 +64,9 @@ class CsvManager():
             if (reviews_max[name] == n_reviews) and (name not in already_added):
                 dataset_clean.data.append(app)
                 already_added.append(name)    
-        return dataset_clean   
+        return dataset_clean
+    # Returns a new CsvManager that is a filtered version of the original. It will contain only rows that have english
+    # text in the "nameCol" column.
     def withJustEnglish(self, nameCol):
         def is_english(string):
             non_ascii = 0
@@ -81,6 +83,7 @@ class CsvManager():
             if is_english(name):
                 apps_english.data.append(app)
         return apps_english
+    # Returns a list of all rows that contain "value" at position "valCol"
     def withValue(self, value:str, valCol:int):
         withThatValue = []
         for row in self.data:
