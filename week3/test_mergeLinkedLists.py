@@ -13,34 +13,36 @@ def mergeLinkedLists(linkedList_one, linkedList_two):
     Returns:
         LinkedList: The merged linked list, with its head updated to reflect the new head of the merged list.
     """
+    # inicializamos os dois nós que serão iterados em ambas as listas
     n1 = linkedList_one.head
     n2 = linkedList_two.head
     n1Prev = None
-    while n2 is not None:
-      if n1.data < n2.data:
-        if n1.next is None:
-          n1.next = n2
-          n2.prev = n1
-          linkedList_one.length += linkedList_two.length
-          break
-        n1Prev = n1
+    while n2 is not None: # enquanto ainda há nós na segunda lista
+      if n1.data < n2.data: # verificamos qual dos nós atuais é o maior. Se for o da segunda lista...
+        if n1.next is None: # ...e se estivermos no fim da lista:
+          n1.next = n2 # apontamos o último nó da lista 1 (que vai ser o atual) para o primeiro nó do que resta da lista 2
+          n2.prev = n1 # e para manter a dupla ligação também apontamos o n1 como sendo o antecessor de n2.
+          linkedList_one.length += linkedList_two.length # o resultado será uma lista com o tamanho das duas listas combinadas.
+          break # se isto acontecer, podemos parar o loop.
+        n1Prev = n1 # se não estivermos no fim da lista, basta irmos para o próximo nó da lista 1 para comparar.
         n1 = n1.next
-      else:
-        if n1Prev is None:
-          n1Prev = n2
-          n2 = n1Prev.next
-          n1Prev.next = n1
-          n1.prev = n1Prev
-          linkedList_one.head = n1Prev
-        else:
-          n1Prev.next = n2
-          n2 = n2.next
-          n1Prev.next.next = n1
-          n1Prev.next.prev = n1Prev
-          n1.prev = n1Prev.next
-          n1Prev = n1Prev.next
-        linkedList_one.length += 1
-        linkedList_two.length -= 1
+      else: # se o nó 1 que é maior
+        if n1Prev is None: # verificamos primeiro se o n1 é o primeiro nó da lista 1.
+          n1Prev = n2 # se for, significa que o primeiro nó da lista 2 deve vir antes dele.
+          n2 = n1Prev.next # passamos o iterador da lista 2 para o próximo (considerando que n1Prev ainda é da segunda lista neste momento)
+          n1Prev.next = n1 # o próximo nó de n1Prev não será mais um outro nó da segunda lista, mas sim o primeiro nó da lista 1.
+          n1.prev = n1Prev # para manter a dupla ligação, o nó anterior ao n1 deve ser registrado como sendo o n1Prev.
+          linkedList_one.head = n1Prev # por fim, atualizamos a nova cabeça da lista 1 como sendo o n1Prev.
+        else: # se n1 não estiver no início da lista 1:
+          n1Prev.next = n2 # o nó n2 deve ficar entre o n1Prev e o n1. Porranto o next do n1Prev deve ser o n2.
+          n2 = n2.next # passamos o iterador da lista 2 para o próximo elemento da lista 2 (pode ser nullptr)
+          n1Prev.next.next = n1 # como não podemos referenciar o nó que será inserido entre n1Prev e n1 como sendo o n2, configuramos desta maneira a ligação entre ele e n1.
+          n1Prev.next.prev = n1Prev # para manter a dupla ligação entre n1Prev e o antigo n2, configuramos assim o prévio ao antigo n2.
+          n1.prev = n1Prev.next # também para manter a dupla ligação entre o antigo n2 e o n1, configuramos assim o prévio ao n1.
+          n1Prev = n1Prev.next # por fim, atualizamos o prévio ao n1 como sendo o antigo n2.
+        linkedList_two.head = n2 # agora esta é a nova cabeça da lista 2.
+        linkedList_one.length += 1 # a lista 1 ganhou um elemento
+        linkedList_two.length -= 1 # e a lista 2 perdeu um elemento
     return linkedList_one
 
 @pytest.fixture(scope="session")

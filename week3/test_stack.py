@@ -17,22 +17,22 @@ def sunsetViews(buildings, direction):
     list: A sorted list of indices of the buildings that can see the sunset.
     """
     result = Stack()
-    if len(buildings) != 0:
-        if direction == "EAST":
-            curMax = buildings[-1]
-            start = len(buildings) - 1
-            stop = -1
-            step = -1
-        else:
-            curMax = buildings[0]
-            start = 0
-            stop = len(buildings)
-            step = 1
-        result.push(start)
+    if len(buildings) != 0: # apenas se tivermos elementos na lista, fazemos o seguinte:
+        if direction == "EAST": # se a direção do sol for leste, devemos iterar a partir do último prédio
+            curMax = buildings[-1] # inicializo o valor máximo da altura do prédio como sendo a altura do último prédio
+            start = len(buildings) - 1 # o início da iteração deve se iniciar no fim
+            stop = -1 # o loop deve parar no início, ou seja, antes do índice virar -1
+            step = -1 # como iremos iterar no sentido contrário, o incremento deve ser negativo
+        else: # se a direção do sol for no oeste...
+            curMax = buildings[0] # inicializo o valor máximo como sendo a altura do primeiro prédio
+            start = 0 # a iteração deve começar pelo primeiro prédio
+            stop = len(buildings) # devemos parar o loop no final
+            step = 1 # e percorrermos os prédios um por um.
+        result.push(start) # como é garantido que o primeiro prédio da iteração pega sol, já colocamos ele na pilha.
         for i in range(start, stop, step):
-            if buildings[i] > curMax:
-                curMax = buildings[i]
-                result.push(i)
+            if buildings[i] > curMax: # se encontrarmos um prédio maior que o máximo até então:
+                curMax = buildings[i] # registramos esta tal altura como sendo a nova máxima
+                result.push(i) # e colocamos na pilha o índice deste prédio.
     return sorted(list(result))
 
 @pytest.fixture(scope="session")
