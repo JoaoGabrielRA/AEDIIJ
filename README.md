@@ -14,3 +14,6 @@ Contains content made by me for the Algorithms and Data Structures II course.
 
 ## Week 4:
 - Video explaining my implement for the coding challenge given: [Loom](https://www.loom.com/share/9b5935e8801e44e6a9a2b4859aa9a2ad)
+
+## Week 6:
+- Solution for coding challenge: [Github](https://github.com/Lucas-Morais-Freire/AEDII/blob/main/week6/Week_06_bst.ipynb)
