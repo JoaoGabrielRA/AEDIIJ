@@ -11,3 +11,6 @@ Contains content made by me for the Algorithms and Data Structures II course.
 
 ## Week 3:
 - Video explaining my implementations for the coding challenge given: [Loom](https://www.loom.com/share/af8bce7a03ce4bb78561e89bf1d04efd)
+
+## Week 4:
+- Video explaining my implement for the coding challenge given: [Loom](https://www.loom.com/share/9b5935e8801e44e6a9a2b4859aa9a2ad)
