@@ -24,3 +24,5 @@ Major fidings:
 - The negative value from the bivariate analysis suggests that nodes with lots of neighbours tend to have a low average neighbour degree. This makes sense because airports from cities that are not very big tend to only have flights to the bigger cities in the same region or state, often the capitals. So the big cities end up having lots of neighbours of small degree and with just a few neighbours of high degree.
 
 - From the connected componets that exist in the network, we can see that most nodes are connected, but there are a few isolated nodes. We could assume it's because they are international-only airports or private airports.
+
+- Most airport's neighbours are connected to each other, meaning that most airports have a tendency to cluster together. Inside regions this coefficient is a bit lower, that could be because, in Brazil, it is more likely for someone to fly to other regions than their own, given that the usual circumstance to travel by plane is that you are going somewhere so far that it is unfeasible to go by car or other methods.
