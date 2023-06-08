@@ -1,3 +1,5 @@
+link do [Loom](https://www.loom.com/share/1c71f051a25642ba94f7ff777cee8a7e) para breve vídeo explicando a solução.
+
 Group:
 - João Gabriel Rodrigues de Azevedo
 - João Victor Moura Monteiro Madruga
