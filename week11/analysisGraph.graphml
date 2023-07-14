@@ -195,9 +195,6 @@
     <node id="Bosnia And Herzegovina">
       <data key="d0">0</data>
     </node>
-    <node id="British Summer Time">
-      <data key="d0">0</data>
-    </node>
     <node id="Canary Islands">
       <data key="d0">0</data>
     </node>
@@ -217,9 +214,6 @@
       <data key="d0">0</data>
     </node>
     <node id="Denmark">
-      <data key="d0">0</data>
-    </node>
-    <node id="Eastern European Summer Time">
       <data key="d0">0</data>
     </node>
     <node id="Eastern European Time">
@@ -336,9 +330,6 @@
     <node id="Time In Turkey">
       <data key="d0">0</data>
     </node>
-    <node id="Time In The Republic Of Ireland">
-      <data key="d0">0</data>
-    </node>
     <node id="Tunisia">
       <data key="d0">0</data>
     </node>
@@ -423,6 +414,9 @@
     <node id="Bor District">
       <data key="d0">0</data>
     </node>
+    <node id="British Summer Time">
+      <data key="d0">0</data>
+    </node>
     <node id="Bulgaria">
       <data key="d0">0</data>
     </node>
@@ -472,9 +466,6 @@
       <data key="d0">0</data>
     </node>
     <node id="Europe">
-      <data key="d0">0</data>
-    </node>
-    <node id="European Union">
       <data key="d0">0</data>
     </node>
     <node id="Finland">
@@ -571,9 +562,6 @@
       <data key="d0">0</data>
     </node>
     <node id="Mehedinți County">
-      <data key="d0">0</data>
-    </node>
-    <node id="Member State Of The European Union">
       <data key="d0">0</data>
     </node>
     <node id="Morocco">
@@ -1074,6 +1062,9 @@
     <node id="European Parliament">
       <data key="d0">0</data>
     </node>
+    <node id="European Union">
+      <data key="d0">0</data>
+    </node>
     <node id="Eviatar Zerubavel">
       <data key="d0">0</data>
     </node>
@@ -1257,9 +1248,6 @@
     <node id="Lobbying">
       <data key="d0">0</data>
     </node>
-    <node id="Local Mean Time">
-      <data key="d0">0</data>
-    </node>
     <node id="Lunar Calendar">
       <data key="d0">0</data>
     </node>
@@ -1357,9 +1345,6 @@
       <data key="d0">0</data>
     </node>
     <node id="Nuclear Timescale">
-      <data key="d0">0</data>
-    </node>
-    <node id="Nunavut">
       <data key="d0">0</data>
     </node>
     <node id="Oclc (Identifier)">
@@ -7023,9 +7008,6 @@
     <node id="Eurostat">
       <data key="d0">0</data>
     </node>
-    <node id="Eurovision Song Contest 2007">
-      <data key="d0">0</data>
-    </node>
     <node id="Eva Braun (Band)">
       <data key="d0">0</data>
     </node>
@@ -7129,6 +7111,9 @@
       <data key="d0">0</data>
     </node>
     <node id="Francia">
+      <data key="d0">0</data>
+    </node>
+    <node id="Francophone Economy">
       <data key="d0">0</data>
     </node>
     <node id="Free-To-Air">
@@ -7939,6 +7924,9 @@
       <data key="d0">0</data>
     </node>
     <node id="Megatrend University">
+      <data key="d0">0</data>
+    </node>
+    <node id="Member State Of The European Union">
       <data key="d0">0</data>
     </node>
     <node id="Member States Of The Council Of Europe">
@@ -10626,6 +10614,9 @@
     <node id="Sud-Ubangi">
       <data key="d0">0</data>
     </node>
+    <node id="Time In The Republic Of Ireland">
+      <data key="d0">0</data>
+    </node>
     <node id="Tirana">
       <data key="d0">0</data>
     </node>
@@ -10696,6 +10687,9 @@
       <data key="d0">0</data>
     </node>
     <node id="Donetsk">
+      <data key="d0">0</data>
+    </node>
+    <node id="Eastern European Summer Time">
       <data key="d0">0</data>
     </node>
     <node id="Ennedi-Est (Region)">
@@ -12390,9 +12384,6 @@
     <edge source="Central European Summer Time" target="Bosnia And Herzegovina">
       <data key="d1">0</data>
     </edge>
-    <edge source="Central European Summer Time" target="British Summer Time">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Central European Summer Time" target="Canary Islands">
       <data key="d1">0</data>
     </edge>
@@ -12418,9 +12409,6 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Summer Time" target="Denmark">
-      <data key="d1">0</data>
-    </edge>
-    <edge source="Central European Summer Time" target="Eastern European Summer Time">
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Summer Time" target="Eastern European Time">
@@ -12538,9 +12526,6 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Summer Time" target="Time In Turkey">
-      <data key="d1">0</data>
-    </edge>
-    <edge source="Central European Summer Time" target="Time In The Republic Of Ireland">
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Summer Time" target="Time Zone">
@@ -12678,9 +12663,6 @@
     <edge source="Central European Time" target="Central Africa Time">
       <data key="d1">0</data>
     </edge>
-    <edge source="Central European Time" target="Central European Summer Time">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Central European Time" target="Cologne">
       <data key="d1">0</data>
     </edge>
@@ -12714,9 +12696,6 @@
     <edge source="Central European Time" target="East Africa Time">
       <data key="d1">0</data>
     </edge>
-    <edge source="Central European Time" target="Eastern European Summer Time">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Central European Time" target="Eastern European Time">
       <data key="d1">0</data>
     </edge>
@@ -12727,9 +12706,6 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Time" target="Europe">
-      <data key="d1">0</data>
-    </edge>
-    <edge source="Central European Time" target="European Union">
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Time" target="Finland">
@@ -12862,9 +12838,6 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Time" target="Mehedinți County">
-      <data key="d1">0</data>
-    </edge>
-    <edge source="Central European Time" target="Member State Of The European Union">
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Time" target="Monaco">
@@ -13041,9 +13014,6 @@
     <edge source="Central European Time" target="Time In The Czech Republic">
       <data key="d1">0</data>
     </edge>
-    <edge source="Central European Time" target="Time In The Republic Of Ireland">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Central European Time" target="Time Zone">
       <data key="d1">0</data>
     </edge>
@@ -13123,9 +13093,6 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Time" target="West Africa Time">
-      <data key="d1">0</data>
-    </edge>
-    <edge source="Central European Time" target="Western European Summer Time">
       <data key="d1">0</data>
     </edge>
     <edge source="Central European Time" target="Western European Time">
@@ -13818,9 +13785,6 @@
     <edge source="Daylight Saving Time" target="Lobbying">
       <data key="d1">0</data>
     </edge>
-    <edge source="Daylight Saving Time" target="Local Mean Time">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Daylight Saving Time" target="Lunar Calendar">
       <data key="d1">0</data>
     </edge>
@@ -13918,9 +13882,6 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Daylight Saving Time" target="Nuclear Timescale">
-      <data key="d1">0</data>
-    </edge>
-    <edge source="Daylight Saving Time" target="Nunavut">
       <data key="d1">0</data>
     </edge>
     <edge source="Daylight Saving Time" target="Oclc (Identifier)">
@@ -24381,9 +24342,6 @@
     <edge source="Serbia" target="Eurostat">
       <data key="d1">0</data>
     </edge>
-    <edge source="Serbia" target="Eurovision Song Contest 2007">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Serbia" target="Eva Braun (Band)">
       <data key="d1">0</data>
     </edge>
@@ -24517,6 +24475,9 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Serbia" target="Francia">
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Serbia" target="Francophone Economy">
       <data key="d1">0</data>
     </edge>
     <edge source="Serbia" target="Free-To-Air">
@@ -31503,9 +31464,6 @@
     <edge source="Utc+1" target="Central Africa Time">
       <data key="d1">0</data>
     </edge>
-    <edge source="Utc+1" target="Central European Summer Time">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Utc+1" target="Central European Time">
       <data key="d1">0</data>
     </edge>
@@ -31552,9 +31510,6 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Utc+1" target="East Africa Time">
-      <data key="d1">0</data>
-    </edge>
-    <edge source="Utc+1" target="Eastern European Summer Time">
       <data key="d1">0</data>
     </edge>
     <edge source="Utc+1" target="Eastern European Time">
@@ -32184,9 +32139,6 @@
     <edge source="Utc+2" target="Białystok">
       <data key="d1">0</data>
     </edge>
-    <edge source="Utc+2" target="British Summer Time">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Utc+2" target="Brussels">
       <data key="d1">0</data>
     </edge>
@@ -32631,9 +32583,6 @@
     <edge source="Utc+2" target="Time In Turkey">
       <data key="d1">0</data>
     </edge>
-    <edge source="Utc+2" target="Time In The Republic Of Ireland">
-      <data key="d1">0</data>
-    </edge>
     <edge source="Utc+2" target="Time Zone">
       <data key="d1">0</data>
     </edge>
@@ -32863,9 +32812,6 @@
       <data key="d1">0</data>
     </edge>
     <edge source="Utc+2" target="West Africa Time">
-      <data key="d1">0</data>
-    </edge>
-    <edge source="Utc+2" target="Western European Summer Time">
       <data key="d1">0</data>
     </edge>
     <edge source="Utc+2" target="Western European Time">
